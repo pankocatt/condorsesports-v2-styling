@@ -8,6 +8,9 @@
     
     :root {
         --heading-scale: 1.25;
+        --condors-dark: #1F1F1F;
+        --condors-light-grey: #737373;
+        --condors-primary: #BE965C;
     }
     
     h1, h2, h3, h4, h5, h6 {
@@ -41,8 +44,8 @@
     }
     
     button {
-        background-color: #BE965C;
-        color: #1F1F1F;
+        background-color: var(--condors-primary);
+        color: var(--condors-dark);
         border-radius: 6px;
         text-align: center;
         
@@ -59,22 +62,22 @@
     }
     
     p {
-        color: #737373;
+        color: var(--condors-light-grey);
         margin-bottom: 2rem;
         margin-top: 2rem;
     }
     
     li {
-        color: #737373;
+        color: var(--condors-light-grey);
     }
     
     
     h6 {
-        color: #737373;
+        color: var(--condors-light-grey);
     }
     
     table {
-        border: 3px solid #1F1F1F;
+        border: 3px solid var(--condors-dark);
         border-radius: 6px;
         table-layout: fixed;
         width: 100%;
@@ -82,9 +85,9 @@
     }
     
     th {
-        border: 3px solid #1F1F1F;
+        border: 3px solid var(--condors-dark);
         padding: 17px 23px;
-        background-color: #1F1F1F;
+        background-color: var(--condors-dark);
         color: white;
         font-weight: bold;
     }
@@ -93,7 +96,7 @@
         justify-content: center;
         align-content: center;
         padding: 50px;
-        border: 3px solid #1F1F1F;
+        border: 3px solid var(--condors-dark);
     }
     
     hr {
@@ -101,27 +104,17 @@
         border-top: 1px solid #ccc;
         margin: 4rem 0;
     }
+
+/* CUSTOM CLASSES */
     
     .info-card {
         display: flex;
         flex-direction: column;
         padding: 3%; 
     }
-    
-/* PER-PAGE CLASSES */
 
-    /* .game-logo
-        for the game logo icons that appear under "titles" to redirect the user to the appropriate game roster
-    */
-    .game-logo {
-        width: 100%;
-        max-width: 220px;
-        height: auto;
-        transition: transform 0.2s ease;
-    }
-    
-    .game-logo:hover {
-        transform: scale(1.05) rotate(5deg);
+    .resizing-text {
+        font-size: clamp(12px, 4.5cqw, 20px);
     }
 
     /* .marquee
@@ -153,6 +146,24 @@
       }
     }
     
+/* PER-PAGE CLASSES */
+
+/* FROM INDEX */
+
+    /* .game-logo
+        for the game logo icons that appear under "titles" to redirect the user to the appropriate game roster
+    */
+    .game-logo {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        transition: transform 0.2s ease;
+    }
+    
+    .game-logo:hover {
+        transform: scale(1.05) rotate(5deg);
+    }
+    
     /* .contact-card
         for the card used to display e-mail, location, and discord information
     */
@@ -178,5 +189,19 @@
         object-fit: cover;
         object-position: center;
     }
+
+/* FROM ACADEMIC-PATHWAYS */
+    .border {
+        border: 2px solid var(--condors-dark) !important;
+    }
+    
+    .bg-dark {
+        background-color: var(--condors-dark) !important;
+    }
+    
+    .program-image {
+        object-fit: cover;
+    }
+    
     
     

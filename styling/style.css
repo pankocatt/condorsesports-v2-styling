@@ -105,7 +105,7 @@
         margin: 4rem 0;
     }
 
-/* CUSTOM CLASSES */
+/* || CUSTOM CLASSES */
     
     .info-card {
         display: flex;
@@ -148,7 +148,7 @@
     
 /* PER-PAGE CLASSES */
 
-/* FROM INDEX */
+/* || INDEX */
 
     /* .game-logo
         for the game logo icons that appear under "titles" to redirect the user to the appropriate game roster
@@ -190,7 +190,7 @@
         object-position: center;
     }
 
-/* FROM ACADEMIC-PATHWAYS */
+/* || ACADEMIC-PATHWAYS */
     .border {
         border: 2px solid var(--condors-dark) !important;
     }
@@ -203,7 +203,7 @@
         object-fit: cover;
     }
     
-/* FROM ACADEMY */
+/* || ACADEMY */
     .list-size-up {
         font-size: 1.25rem;
     }
@@ -214,7 +214,7 @@
         margin-bottom: 0.25rem !important;
     }
 
-/* FROM ACHIEVEMENTS */
+/* || ACHIEVEMENTS */
     .league-logos {
         height: 150px;
         width: auto;
@@ -223,7 +223,7 @@
         margin-bottom: 1.5rem;
     }
 
-/* FROM COMPETE */
+/* || COMPETE */
 
     .hero-banner{
         background: linear-gradient(70deg, rgba(0, 0, 0, 0.00) 30.8%, var(--condors-dark) 65.43%), url("https://conestoga.prestosports.com/sports/esports/v2/assets/Varsity_Banner.png") center / cover no-repeat;
@@ -259,6 +259,295 @@
     
     .small-icon {
         font-size: 10px;
+    }
+
+/* || JOB-OPP */
+    .sponsor-logo {
+        height: 150px;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+/* || THE-ARENA */
+
+    .arena-hero-banner{
+        background: linear-gradient(120deg, rgba(0, 0, 0, 0.00) 22.8%, #000 58.43%), url("https://conestoga.prestosports.com/sports/esports/v2/assets/AUD3.jpg") center / cover no-repeat;
+        background-size:cover;
+        background-position:center;
+        height:750px;
+        display:flex;
+        align-items:center;
+    }
+    
+    .arena-hero-banner-mobile{
+        background: url("https://conestoga.prestosports.com/sports/esports/v2/assets/Arena_Banner_Mobile_Wider.png") center / cover no-repeat;
+        background-color: black;
+        background-size: auto 100%;
+        display:flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 10% 3%;
+        align-items:center;
+    }
+
+/* || WATCH-US */
+
+    /* || big player cards */
+    .player-card-big{
+        background:url('https://conestoga.prestosports.com/sports/esports/v2/assets/Player_Card_Big_Background.png');
+        background-size:cover;
+        width:100%;
+        max-width:1025px;
+        height:286px;
+    
+        position:relative;
+        overflow:visible;
+    
+        box-shadow:0 4px 4px rgba(190,150,92,.71);
+    }
+    
+    .player-card-photo {
+        translate: 0px -20px;
+    }
+
+    .player-socials i{
+        font-size:clamp(1.4rem,5vw,2rem);
+    }
+    
+
+    /* || caster-specific card stuff */
+    .caster-name{
+        font-size:clamp(2.25rem,8vw,4rem);
+        line-height:.9;
+    }
+    
+    .caster-info{
+        font-size:clamp(1rem,3.5vw,1.2rem);
+    }
+    
+/* || ROSTERS */
+
+    /* || mini player cards */
+    .player-card-mini {
+        container-type: inline-size;
+        position: relative;
+        overflow: hidden;
+    
+        background:
+            linear-gradient(
+                120deg,
+                rgba(57,57,57,0.15) 0%,
+                rgba(31,31,31,0.85) 70%
+            ),
+            url("https://conestoga.prestosports.com/sports/esports/v2/assets/BG_BLACK.png");
+            
+        background-size: auto, 371px;
+    
+        width: 100%;
+        aspect-ratio: 372 / 175;
+        border-radius: 8px;
+        transition:  transform .3s ease;
+        
+        box-shadow: 0 4px 4px 0 var(--condors-primary);
+    }
+    
+    .player-card-mini::after {
+        content: "";
+        position: absolute;
+    
+        top: -20%;
+        right: -40%;
+    
+        width: 55%;
+        height: 150%;
+    
+        background: rgba(255,255,255,0.035);
+    
+        transform: skewX(-25deg);
+    
+        transition: transform .3s ease;
+    }
+    
+    .player-card-mini:hover::after {
+        transform: skewX(-25deg) translateX(20px);
+    }
+    
+    .player-card-mini:hover {
+        transform: scale(1.02);
+    }
+    
+    .player-flag {
+        aspect-ratio: 16/9;
+        width: clamp(20px, 7cqw, 32px);
+        height: auto;
+        
+        border-radius: 4px;
+        margin-top: 0 !important;
+        margin-bottom: 0.5rem;
+    }
+    
+    .player-card-mini-text {
+        font-size: clamp(12px, 4cqw, 20px);
+        margin-top: 0 ;
+        margin-bottom: 0.35em;
+    }
+    
+    .player-ign{
+        font-size: clamp(20px, 8cqw, 40px);
+        margin-top: 0;
+        margin-bottom: 0.25em;
+    }
+    
+    .player-ign-long {
+        font-size: clamp(20px, 8cqw, 32px);
+        letter-spacing: -0.1em;
+        margin-top: 0;
+        margin-bottom: 0.25em;
+
+    }
+
+    /* || coach cards */
+    .coach-card-mini {
+        container-type: inline-size;
+        position: relative;
+        overflow: hidden;
+    
+        background:
+            linear-gradient(
+                120deg,
+                rgba(212, 177, 126, 0.15) 0%,
+                rgba(190, 150, 92, 0.85) 70%
+            ),
+            url("https://conestoga.prestosports.com/sports/esports/v2/assets/BG_GOLD.png");
+            
+        background-size: auto, 371px;
+    
+        width: 100%;
+        aspect-ratio: 372 / 175;
+        border-radius: 8px;
+        transition:  transform .3s ease;
+        
+        box-shadow: 0 4px 4px 0 var(--condors-primary);
+    }
+    
+    .coach-card-mini::after {
+        content: "";
+        position: absolute;
+    
+        top: -20%;
+        right: -40%;
+    
+        width: 55%;
+        height: 150%;
+    
+        background: rgba(255,255,255,0.035);
+    
+        transform: skewX(-25deg);
+    
+        transition: transform .3s ease;
+    }
+    
+    .coach-card-mini:hover::after {
+        transform: skewX(-25deg) translateX(20px);
+    }
+    
+    .coach-card-mini:hover {
+        transform: scale(1.02);
+    }
+
+    /* || per-roster stuff */
+    
+    /* VALORANT */
+
+    .roster-section-val {
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    .roster-section-val::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+    
+        background-image: url("https://conestoga.prestosports.com/sports/esports/v2/assets/Valorant_Background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        opacity: 0.4;
+    
+        z-index: -1;
+    }
+
+    /* ROCKET LEAGUE */
+
+    .roster-section-rl {
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    .roster-section-rl::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+    
+        background-image: url("https://conestoga.prestosports.com/sports/esports/v2/assets/RocketLeague_Background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        opacity: 0.4;
+    
+        z-index: -1;
+    }
+
+    /* CALL OF DUTY */
+    
+    .roster-section-cod {
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    .roster-section-cod::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+    
+        background-image: url("https://conestoga.prestosports.com/sports/esports/v2/assets/CallofDuty_Background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        opacity: 0.4;
+    
+        z-index: -1;
+    }
+    
+    /* SIMSPORTS */
+
+     .roster-section-fc {
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    .roster-section-fc::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+    
+        background-image: url("https://conestoga.prestosports.com/sports/esports/v2/assets/FC26_Background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        opacity: 0.4;
+    
+        z-index: -1;
     }
 
     

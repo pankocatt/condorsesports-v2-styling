@@ -203,5 +203,64 @@
         object-fit: cover;
     }
     
+/* FROM ACADEMY */
+    .list-size-up {
+        font-size: 1.25rem;
+    }
+    
+    .p-size-up {
+        font-size: 1.25rem;
+        margin-top: 0.25rem !important;
+        margin-bottom: 0.25rem !important;
+    }
+
+/* FROM ACHIEVEMENTS */
+    .league-logos {
+        height: 150px;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+        margin-bottom: 1.5rem;
+    }
+
+/* FROM COMPETE */
+
+    .hero-banner{
+        background: linear-gradient(70deg, rgba(0, 0, 0, 0.00) 30.8%, var(--condors-dark) 65.43%), url("https://conestoga.prestosports.com/sports/esports/v2/assets/Varsity_Banner.png") center / cover no-repeat;
+        background-size:cover;
+        background-position:center;
+        height: 650px;
+        display:flex;
+        align-items:center;
+    }
+    
+    .hero-banner-mobile{
+        background: url("https://conestoga.prestosports.com/sports/esports/v2/assets/Compete_Banner_Mobile_Wider.png") center / cover no-repeat;
+        background-color: black;
+        background-size: auto 100%;
+        display:flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 10% 3%;
+        align-items:center;
+    }
+
+    .button-banner{
+        background: radial-gradient(47.23% 107.55% at 50% 50%, rgba(231, 231, 231, 1) 74.52%, rgba(190, 150, 92, 0.6) 100%);box-shadow: 0 4px 10px 0 #393839;
+        color: #221921;
+        
+        position:absolute;
+    
+        left:50%;
+        top:72%;
+ 
+        transform:translate(-50%,-50%);
+    }
+    
+    .small-icon {
+        font-size: 10px;
+    }
+
+    
     
     

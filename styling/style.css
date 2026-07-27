@@ -1,0 +1,182 @@
+/* ROOT/BASE STYLING */
+    @font-face {
+        font-family: 'BigNoodleTitling';
+        src: url('https://fonts.cdnfonts.com/s/24262/big_noodle_titling.woff') format('woff');
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    :root {
+        --heading-scale: 1.25;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'BigNoodleTitling', sans-serif;
+        font-weight: normal !important;
+        line-height: 0.95;
+    }
+    
+    h1 {
+        font-size: calc(2.5rem * var(--heading-scale));
+    }
+    
+    h2 {
+        font-size: calc(2rem * var(--heading-scale));
+    }
+    
+    h3 {
+        font-size: calc(1.75rem * var(--heading-scale));
+    }
+    
+    h4 {
+        font-size: calc(1.5rem * var(--heading-scale));
+    }
+    
+    h5 {
+        font-size: calc(1.25rem * var(--heading-scale));
+    }
+    
+    h6 {
+        font-size: calc(1rem * var(--heading-scale));
+    }
+    
+    button {
+        background-color: #BE965C;
+        color: #1F1F1F;
+        border-radius: 6px;
+        text-align: center;
+        
+        min-width: 20vw;
+        display: flex;
+        justify-content: space-between;
+        
+        font-family: 'BigNoodleTitling', sans-serif;
+        font-weight: normal;
+        font-size: 1.75rem;
+        border: 0;
+        
+        transition: ease-in-out 0.1s;
+    }
+    
+    p {
+        color: #737373;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    
+    li {
+        color: #737373;
+    }
+    
+    
+    h6 {
+        color: #737373;
+    }
+    
+    table {
+        border: 3px solid #1F1F1F;
+        border-radius: 6px;
+        table-layout: fixed;
+        width: 100%;
+        text-align: center;
+    }
+    
+    th {
+        border: 3px solid #1F1F1F;
+        padding: 17px 23px;
+        background-color: #1F1F1F;
+        color: white;
+        font-weight: bold;
+    }
+    
+    td {
+        justify-content: center;
+        align-content: center;
+        padding: 50px;
+        border: 3px solid #1F1F1F;
+    }
+    
+    hr {
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 4rem 0;
+    }
+    
+    .info-card {
+        display: flex;
+        flex-direction: column;
+        padding: 3%; 
+    }
+    
+/* PER-PAGE CLASSES */
+
+    /* .game-logo
+        for the game logo icons that appear under "titles" to redirect the user to the appropriate game roster
+    */
+    .game-logo {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        transition: transform 0.2s ease;
+    }
+    
+    .game-logo:hover {
+        transform: scale(1.05) rotate(5deg);
+    }
+
+    /* .marquee
+        for the rotating league banners
+    */
+    .marquee {
+      --gap: 1rem;
+      display: flex;
+      overflow: hidden;
+      user-select: none;
+      gap: var(--gap);
+    }
+
+    .marquee__content {
+      flex-shrink: 0;
+      display: flex;
+      justify-content: space-around;
+      min-width: 100%;
+      gap: var(--gap);
+      animation: scroll 30s linear infinite;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(calc(-100% - var(--gap)));
+      }
+    }
+    
+    /* .contact-card
+        for the card used to display e-mail, location, and discord information
+    */
+
+    .contact-card-mobile {
+        background-image: url('https://conestoga.prestosports.com/sports/esports/v2/assets/Wings_Silhouette_Low_Opacity.png'); 
+        background-size: 100%; 
+        background-position: bottom left; 
+        background-repeat: no-repeat;
+    }
+    
+    .contact-card-logo-container {
+        width: 100%;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .contact-card-logo {
+        width: 50%;
+        height: 110px;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    

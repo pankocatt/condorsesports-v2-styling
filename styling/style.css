@@ -168,6 +168,13 @@
         for the card used to display e-mail, location, and discord information
     */
 
+    .contact-card {
+        background-image: url('https://conestoga.prestosports.com/sports/esports/v2/assets/Wings_Silhouette_Low_Opacity.png'); 
+        background-size: 60%; 
+        background-position: bottom -250px left -300px; 
+        background-repeat: no-repeat;
+    }
+
     .contact-card-mobile {
         background-image: url('https://conestoga.prestosports.com/sports/esports/v2/assets/Wings_Silhouette_Low_Opacity.png'); 
         background-size: 100%; 
@@ -505,7 +512,7 @@
     }
 
     /* CALL OF DUTY */
-    
+
     .roster-section-cod {
         position: relative;
         overflow: hidden;

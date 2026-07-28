@@ -306,7 +306,7 @@
         background-size:cover;
         width:100%;
         max-width:1025px;
-        height:286px;
+        min-height:286px;
     
         position:relative;
         overflow:visible;
@@ -315,7 +315,7 @@
     }
     
     .player-card-photo {
-        translate: 0px -20px;
+        translate: 0px 0px;
     }
 
     .player-socials i{

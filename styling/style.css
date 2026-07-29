@@ -315,7 +315,7 @@
     }
     
     .player-card-photo {
-        translate: 0px 0px;
+        translate: 0px -30px;
     }
 
     .player-socials i{

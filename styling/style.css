@@ -306,7 +306,7 @@
         background-size:cover;
         width:100%;
         max-width:1025px;
-        min-height:286px;
+        height:286px;
     
         position:relative;
         overflow:visible;

@@ -558,8 +558,8 @@
         z-index: -1;
     }
 
-    .vertical-ad {
-        background-image: var(--player-page-ad);
+    .vertical-ad img{
+         content: var(--player-page-ad);
     }
 
     

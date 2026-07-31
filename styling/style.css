@@ -11,7 +11,7 @@
         --condors-dark: #1F1F1F;
         --condors-light-grey: #737373;
         --condors-primary: #BE965C;
-        --player-page-ad: url('https://conestoga.prestosports.com/sports/esports/v2/assets/PLACEHOLDER_AD.png')
+        --player-page-panel: url('https://conestoga.prestosports.com/sports/esports/v2/assets/PLACEHOLDER_AD.png')
     }
     
     h1, h2, h3, h4, h5, h6 {
@@ -558,8 +558,8 @@
         z-index: -1;
     }
 
-    .vertical-ad {
-        background-image: var(--player-page-ad);
+    .vertical-panel {
+        background-image: var(--player-page-panel);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

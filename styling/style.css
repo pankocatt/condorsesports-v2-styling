@@ -558,6 +558,10 @@
         z-index: -1;
     }
 
+    .vertical-ad {
+        content: var(--player-page-ad);
+    }
+
     
     
     

@@ -558,8 +558,13 @@
         z-index: -1;
     }
 
-    .vertical-ad img{
-         content: var(--player-page-ad);
+    .vertical-ad {
+        background-image: var(--player-page-ad);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
     }
 
     

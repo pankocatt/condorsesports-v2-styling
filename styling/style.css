@@ -559,7 +559,7 @@
     }
 
     .vertical-ad {
-        content: var(--player-page-ad);
+        background-image: var(--player-page-ad);
     }
 
     
